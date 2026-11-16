@@ -52,7 +52,7 @@ Untuk laptop dengan RAM 8 GB (seperti Intel Core i7 11th Gen), sangat disarankan
 
 ### 1. Kloning Repositori
 ```bash
-git clone https://github.com/nurulaini23ag-cyber/proyek-flutter-gojek.git
+git clone https://github.com/azkyyyt/proyek-flutter-gojek.git
 cd proyek-flutter-gojek
 ```
 
@@ -88,5 +88,6 @@ flutter run
 
 ---
 
-## 👨‍💻 Kontribusi & Lisensi
-Proyek ini dibuat untuk keperluan pengembangan dan tugas akademik. Siapa pun dipersilakan untuk *clone*, *fork*, dan mengembangkan lebih lanjut!
+## 👨‍💻 Author & Kontribusi
+* **Developer:** [Azkia Akbar Pratama (azkyyyt)](https://github.com/azkyyyt)
+* Proyek ini dibuat untuk keperluan pengembangan dan tugas akademik. Siapa pun dipersilakan untuk *clone*, *fork*, dan mengembangkan lebih lanjut!
