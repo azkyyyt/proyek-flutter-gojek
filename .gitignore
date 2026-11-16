@@ -1,0 +1,36 @@
+# Root .gitignore for Proyek Flutter Ekosistem Gojek
+
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Flutter / Dart Build & Tools
+**/build/
+**/.dart_tool/
+**/.flutter-plugins
+**/.flutter-plugins-dependencies
+**/.packages
+**/.pub/
+**/.pub-cache/
+
+# IDEs & Editors
+**/.idea/
+**/.vscode/
+*.iml
+*.iws
+*.ipr
+
+# OS generated
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Python and Scratch Scripts
+*.py
+PROMPT_*.md
+README_*.md
