@@ -200,10 +200,14 @@ class _MerchantOtpScreenState extends State<MerchantOtpScreen> {
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: List.generate(6, (index) {
-                  return Container(
-                    width: 46,
-                    height: 52,
-                    decoration: BoxDecoration(
+                  return Expanded(
+                    child: Container(
+                      margin: EdgeInsets.only(
+                        left: index == 0 ? 0 : 3.5,
+                        right: index == 5 ? 0 : 3.5,
+                      ),
+                      height: 52,
+                      decoration: BoxDecoration(
                       color: Colors.white,
                       borderRadius: BorderRadius.circular(14),
                       border: Border.all(
@@ -251,8 +255,9 @@ class _MerchantOtpScreenState extends State<MerchantOtpScreen> {
                         },
                       ),
                     ),
-                  );
-                }),
+                  ),
+                );
+              }),
               ),
               const SizedBox(height: 20),
 

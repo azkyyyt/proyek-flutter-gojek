@@ -247,10 +247,14 @@ class _VerifikasiOTPScreenState extends State<VerifikasiOTPScreen> {
                 children: List.generate(6, (index) {
                   final isFilled = _controllers[index].text.isNotEmpty;
                   final isFocused = _focusNodes[index].hasFocus;
-                  return Container(
-                    width: 46,
-                    height: 52,
-                    decoration: BoxDecoration(
+                  return Expanded(
+                    child: Container(
+                      margin: EdgeInsets.only(
+                        left: index == 0 ? 0 : 3.5,
+                        right: index == 5 ? 0 : 3.5,
+                      ),
+                      height: 52,
+                      decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(14),
                       border: Border.all(
                         color: _hasError
@@ -281,8 +285,9 @@ class _VerifikasiOTPScreenState extends State<VerifikasiOTPScreen> {
                       ),
                       onChanged: (val) => _onDigitChanged(index, val),
                     ),
-                  );
-                }),
+                  ),
+                );
+              }),
               ),
               const SizedBox(height: 24),
 

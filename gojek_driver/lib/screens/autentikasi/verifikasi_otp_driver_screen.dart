@@ -229,10 +229,14 @@ class _VerifikasiOtpDriverScreenState extends State<VerifikasiOtpDriverScreen> {
                   final isFilled = _controllers[index].text.isNotEmpty;
                   final hasError = _errorMessage != null;
 
-                  return Container(
-                    width: 46,
-                    height: 52,
-                    decoration: BoxDecoration(
+                  return Expanded(
+                    child: Container(
+                      margin: EdgeInsets.only(
+                        left: index == 0 ? 0 : 3.5,
+                        right: index == 5 ? 0 : 3.5,
+                      ),
+                      height: 52,
+                      decoration: BoxDecoration(
                       color: Colors.white,
                       borderRadius: BorderRadius.circular(12),
                       border: Border.all(
@@ -280,8 +284,9 @@ class _VerifikasiOtpDriverScreenState extends State<VerifikasiOtpDriverScreen> {
                         },
                       ),
                     ),
-                  );
-                }),
+                  ),
+                );
+              }),
               ),
 
               if (_errorMessage != null) ...[

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Verifikasi OTP - Gojek / MajuRide</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+    }
+  </style>
+</head>
+<body class="bg-gray-100 flex items-center justify-center min-h-screen p-4">
+
+  <!-- Mobile Screen Frame (390 x 844 iPhone / Pixel standard) -->
+  <div class="w-full max-w-[390px] min-h-[780px] bg-white rounded-[36px] shadow-2xl overflow-hidden flex flex-col justify-between p-6 border border-gray-100">
+    
+    <!-- Top Content -->
+    <div>
+      <!-- Header Bar -->
+      <div class="flex items-center gap-3 pt-2 pb-6">
+        <button class="w-10 h-10 rounded-full border border-gray-200 flex items-center justify-center hover:bg-gray-50 transition active:scale-95">
+          <svg class="w-5 h-5 text-gray-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M15 19l-7-7 7-7" />
+          </svg>
+        </button>
+        <span class="text-xs font-semibold px-3 py-1 bg-green-50 text-[#00AA13] rounded-full border border-green-200">
+          Autentikasi Keamanan
+        </span>
+      </div>
+
+      <!-- Title & Subtitle -->
+      <div class="mt-2">
+        <h1 class="text-2xl font-extrabold text-[#0F172A] tracking-tight">Masukkan Kode OTP</h1>
+        <p class="text-sm text-gray-500 mt-2 leading-relaxed">
+          Kode verifikasi 6 digit telah dikirimkan via SMS ke nomor <span class="font-bold text-[#0F172A]">+62 812-3456-7890</span>
+        </p>
+      </div>
+
+      <!-- 6-Digit Responsive OTP Boxes (No overflow, responsive flex) -->
+      <div class="mt-8">
+        <div class="flex items-center justify-between gap-2 w-full">
+          <input type="text" maxlength="1" value="4" class="w-full aspect-[46/52] text-center text-xl font-extrabold text-[#0F172A] bg-white border-2 border-[#00AA13] rounded-xl focus:outline-none focus:ring-2 focus:ring-[#00AA13]/30 shadow-sm" />
+          <input type="text" maxlength="1" value="8" class="w-full aspect-[46/52] text-center text-xl font-extrabold text-[#0F172A] bg-white border-2 border-[#00AA13] rounded-xl focus:outline-none focus:ring-2 focus:ring-[#00AA13]/30 shadow-sm" />
+          <input type="text" maxlength="1" value="2" class="w-full aspect-[46/52] text-center text-xl font-extrabold text-[#0F172A] bg-white border-2 border-[#00AA13] rounded-xl focus:outline-none focus:ring-2 focus:ring-[#00AA13]/30 shadow-sm" />
+          <input type="text" maxlength="1" placeholder="" class="w-full aspect-[46/52] text-center text-xl font-extrabold text-[#0F172A] bg-white border border-gray-300 rounded-xl focus:outline-none focus:border-[#00AA13] focus:ring-2 focus:ring-[#00AA13]/30" />
+          <input type="text" maxlength="1" placeholder="" class="w-full aspect-[46/52] text-center text-xl font-extrabold text-[#0F172A] bg-white border border-gray-300 rounded-xl focus:outline-none focus:border-[#00AA13] focus:ring-2 focus:ring-[#00AA13]/30" />
+          <input type="text" maxlength="1" placeholder="" class="w-full aspect-[46/52] text-center text-xl font-extrabold text-[#0F172A] bg-white border border-gray-300 rounded-xl focus:outline-none focus:border-[#00AA13] focus:ring-2 focus:ring-[#00AA13]/30" />
+        </div>
+      </div>
+
+      <!-- Resend OTP / Timer -->
+      <div class="mt-8 text-center">
+        <p class="text-sm text-gray-500">
+          Tidak menerima kode? 
+          <span class="font-bold text-[#00AA13] hover:underline cursor-pointer">Kirim Ulang (00:45)</span>
+        </p>
+      </div>
+    </div>
+
+    <!-- Bottom Actions -->
+    <div class="pb-4">
+      <button class="w-full py-3.5 bg-[#00AA13] hover:bg-[#008f10] active:scale-[0.99] transition text-white font-bold text-base rounded-2xl shadow-lg shadow-green-600/20 flex items-center justify-center gap-2">
+        <span>Verifikasi Sekarang</span>
+        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+        </svg>
+      </button>
+
+      <div class="flex items-center justify-center gap-2 mt-4 text-xs text-gray-400">
+        <svg class="w-4 h-4 text-gray-400" fill="currentColor" viewBox="0 0 20 20">
+          <path fill-rule="evenodd" d="M5 9V7a5 5 0 0110 0v2a2 2 0 012 2v5a2 2 0 01-2 2H5a2 2 0 01-2-2v-5a2 2 0 012-2zm8-2v2H7V7a3 3 0 016 0z" clip-rule="evenodd" />
+        </svg>
+        <span>Enkripsi End-to-End Dijamin Aman</span>
+      </div>
+    </div>
+
+  </div>
+
+</body>
+</html>
