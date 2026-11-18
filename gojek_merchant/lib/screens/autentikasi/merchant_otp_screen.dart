@@ -350,6 +350,8 @@ class _MerchantOtpScreenState extends State<MerchantOtpScreen> {
                         Flexible(
                           child: Text(
                             _errorMessage!,
+                            softWrap: true,
+                            textAlign: TextAlign.center,
                             style: const TextStyle(
                               fontFamily: 'Plus Jakarta Sans',
                               fontSize: 12,

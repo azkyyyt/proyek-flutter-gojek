@@ -348,6 +348,8 @@ class _VerifikasiOTPScreenState extends State<VerifikasiOTPScreen> {
                         Flexible(
                           child: Text(
                             _errorMessage!,
+                            softWrap: true,
+                            textAlign: TextAlign.center,
                             style: const TextStyle(
                               fontSize: 12,
                               color: Color(0xFFEF4444),

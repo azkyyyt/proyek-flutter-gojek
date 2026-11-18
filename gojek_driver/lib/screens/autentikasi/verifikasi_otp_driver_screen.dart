@@ -292,24 +292,36 @@ class _VerifikasiOtpDriverScreenState extends State<VerifikasiOtpDriverScreen> {
               if (_errorMessage != null) ...[
                 const SizedBox(height: 12),
                 Center(
-                  child: Row(
-                    mainAxisSize: MainAxisSize.min,
-                    children: [
-                      const Icon(
-                        Icons.error_outline,
-                        size: 16,
-                        color: MajuRideDriverTheme.errorRed,
-                      ),
-                      const SizedBox(width: 6),
-                      Text(
-                        _errorMessage!,
-                        style: const TextStyle(
-                          fontSize: 13,
+                  child: Container(
+                    padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
+                    decoration: BoxDecoration(
+                      color: const Color(0xFFFEE2E2),
+                      borderRadius: BorderRadius.circular(8),
+                      border: Border.all(color: const Color(0xFFFCA5A5)),
+                    ),
+                    child: Row(
+                      mainAxisSize: MainAxisSize.min,
+                      children: [
+                        const Icon(
+                          Icons.error_outline,
+                          size: 16,
                           color: MajuRideDriverTheme.errorRed,
-                          fontWeight: FontWeight.w600,
                         ),
-                      ),
-                    ],
+                        const SizedBox(width: 8),
+                        Flexible(
+                          child: Text(
+                            _errorMessage!,
+                            textAlign: TextAlign.center,
+                            softWrap: true,
+                            style: const TextStyle(
+                              fontSize: 12,
+                              color: MajuRideDriverTheme.errorRed,
+                              fontWeight: FontWeight.w600,
+                            ),
+                          ),
+                        ),
+                      ],
+                    ),
                   ),
                 ),
               ],
