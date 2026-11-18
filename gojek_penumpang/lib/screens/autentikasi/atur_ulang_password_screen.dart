@@ -1,4 +1,4 @@
-/import 'package:flutter/material.dart';
+import 'package:flutter/material.dart';
 import '../../theme/majuride_theme.dart';
 import 'masuk_password_screen.dart';
 
