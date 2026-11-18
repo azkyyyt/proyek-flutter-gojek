@@ -17,20 +17,23 @@ class DriverMobilScreen extends StatelessWidget {
           borderRadius: BorderRadius.circular(16),
           border: Border.all(color: MajuRideTheme.cardBorder),
         ),
-        padding: const EdgeInsets.symmetric(vertical: 18, horizontal: 12),
+        padding: const EdgeInsets.symmetric(vertical: 10, horizontal: 6),
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             iconWidget,
-            const SizedBox(height: 10),
-            Text(
-              title,
-              textAlign: TextAlign.center,
-              style: const TextStyle(
-                fontSize: 12.5,
-                fontWeight: FontWeight.w700,
-                color: MajuRideTheme.textDark,
-                height: 1.25,
+            const SizedBox(height: 6),
+            FittedBox(
+              fit: BoxFit.scaleDown,
+              child: Text(
+                title,
+                textAlign: TextAlign.center,
+                style: const TextStyle(
+                  fontSize: 12,
+                  fontWeight: FontWeight.w700,
+                  color: MajuRideTheme.textDark,
+                  height: 1.2,
+                ),
               ),
             ),
           ],
@@ -299,7 +302,7 @@ class DriverMobilScreen extends StatelessWidget {
                   physics: const NeverScrollableScrollPhysics(),
                   crossAxisSpacing: 12,
                   mainAxisSpacing: 12,
-                  childAspectRatio: 0.95,
+                  childAspectRatio: 0.85,
                   children: [
                     _buildGridCard(
                       context,

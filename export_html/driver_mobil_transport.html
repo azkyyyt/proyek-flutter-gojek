@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Transport & Mobil - MajuRide</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+    }
+  </style>
+</head>
+<body class="bg-gray-100 flex items-center justify-center min-h-screen p-4">
+
+  <!-- Mobile Frame (390 x 844) -->
+  <div class="w-full max-w-[390px] min-h-[820px] bg-white rounded-[36px] shadow-2xl overflow-hidden flex flex-col justify-between border border-gray-100">
+    
+    <div>
+      <!-- Header Hijau Gojek -->
+      <div class="bg-[#00AA13] px-5 pt-7 pb-6 rounded-b-[28px] text-white">
+        <!-- Top Nav -->
+        <div class="flex items-center justify-between">
+          <button class="w-10 h-10 rounded-full bg-white/20 flex items-center justify-center hover:bg-white/30 transition">
+            <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M15 19l-7-7 7-7" />
+            </svg>
+          </button>
+          <button class="flex items-center gap-1.5 px-3.5 py-1.5 rounded-full bg-[#10B981] text-white font-bold text-xs shadow-md">
+            <svg class="w-3.5 h-3.5" fill="currentColor" viewBox="0 0 20 20">
+              <path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd" />
+            </svg>
+            <span>Peta</span>
+          </button>
+        </div>
+
+        <!-- Search Bar: Mau ke mana? -->
+        <div class="mt-4 bg-white rounded-2xl p-3 flex items-center justify-between shadow-lg text-gray-800">
+          <div class="flex items-center gap-2.5">
+            <svg class="w-5 h-5 text-red-500" fill="currentColor" viewBox="0 0 20 20">
+              <path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd" />
+            </svg>
+            <span class="text-sm font-medium text-gray-400">Mau ke mana?</span>
+          </div>
+          <div class="flex items-center gap-1.5 px-2.5 py-1 bg-gray-100 rounded-lg text-xs font-bold text-gray-700">
+            <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+            </svg>
+            <span>Nanti</span>
+          </div>
+        </div>
+
+        <!-- Banner Transport -->
+        <div class="mt-3.5 bg-[#008A59] rounded-2xl p-4 flex items-center justify-between border border-white/10 shadow-inner">
+          <div>
+            <h2 class="text-base font-extrabold text-white">Transport</h2>
+            <p class="text-xs text-white/80 mt-0.5 leading-snug">Berkendara dengan nyaman always<br>low prices ➔</p>
+          </div>
+          <div class="text-3xl">🚗</div>
+        </div>
+      </div>
+
+      <!-- Section Title -->
+      <div class="px-5 mt-4">
+        <div class="flex items-center gap-1.5 text-xs text-gray-500 font-medium">
+          <svg class="w-3.5 h-3.5" fill="currentColor" viewBox="0 0 20 20">
+            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z" clip-rule="evenodd" />
+          </svg>
+          <span>Lhokseumawe</span>
+        </div>
+        <h3 class="text-base font-extrabold text-gray-900 mt-1">Perjalanan untuk setiap kebutuhan...</h3>
+      </div>
+
+      <!-- 6 Grid Service Cards (100% Responsif, No Overflow) -->
+      <div class="px-5 mt-3.5 grid grid-cols-3 gap-3">
+        <!-- Card 1 -->
+        <div class="bg-[#F8FAFC] border border-gray-200 rounded-2xl p-2.5 flex flex-col items-center justify-center text-center hover:bg-green-50 transition cursor-pointer aspect-[1/1.18] shadow-sm">
+          <div class="bg-white border border-gray-200 rounded px-1.5 py-0.5 text-sm font-extrabold text-gray-800 shadow-xs mb-1.5">
+            📅 17
+          </div>
+          <span class="text-xs font-bold text-gray-800 leading-tight">Jadwalkan<br>Perjalanan</span>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="bg-[#F8FAFC] border border-gray-200 rounded-2xl p-2.5 flex flex-col items-center justify-center text-center hover:bg-green-50 transition cursor-pointer aspect-[1/1.18] shadow-sm">
+          <div class="text-2xl mb-1">👨‍👩‍👧</div>
+          <span class="text-xs font-bold text-gray-800 leading-tight">Perjalanan<br>Grup</span>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="bg-[#F8FAFC] border border-gray-200 rounded-2xl p-2.5 flex flex-col items-center justify-center text-center hover:bg-green-50 transition cursor-pointer aspect-[1/1.18] shadow-sm">
+          <div class="text-2xl mb-1">🚐</div>
+          <span class="text-xs font-bold text-gray-800 leading-tight">Mobil 6<br>kursi</span>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="bg-[#F8FAFC] border border-gray-200 rounded-2xl p-2.5 flex flex-col items-center justify-center text-center hover:bg-green-50 transition cursor-pointer aspect-[1/1.18] shadow-sm">
+          <div class="text-2xl mb-1">👨‍✈️</div>
+          <span class="text-xs font-bold text-gray-800 leading-tight">Sewa<br>Mobil</span>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="bg-[#F8FAFC] border border-gray-200 rounded-2xl p-2.5 flex flex-col items-center justify-center text-center hover:bg-green-50 transition cursor-pointer aspect-[1/1.18] shadow-sm">
+          <div class="text-sm font-black text-gray-700 leading-none mb-1">➕<br>➖</div>
+          <span class="text-xs font-bold text-gray-800 leading-tight">Nego tarif</span>
+        </div>
+
+        <!-- Card 6 -->
+        <div class="bg-[#F8FAFC] border border-gray-200 rounded-2xl p-2.5 flex flex-col items-center justify-center text-center hover:bg-green-50 transition cursor-pointer aspect-[1/1.18] shadow-sm">
+          <div class="text-2xl mb-1">✈️</div>
+          <span class="text-xs font-bold text-gray-800 leading-tight">Jemputan<br>Airport</span>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Bottom Spacing -->
+    <div class="pb-6"></div>
+  </div>
+
+</body>
+</html>
