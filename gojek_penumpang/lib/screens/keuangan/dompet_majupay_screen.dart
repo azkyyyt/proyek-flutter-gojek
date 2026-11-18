@@ -4,6 +4,7 @@ import '../beranda/beranda_penumpang_screen.dart';
 import '../beranda/scan_qr_screen.dart';
 import '../aktivitas/riwayat_aktivitas_screen.dart';
 import '../profil/profil_penumpang_screen.dart';
+import 'aktivasi_ovo_paylater_screen.dart';
 
 class DompetMajupayScreen extends StatefulWidget {
   const DompetMajupayScreen({super.key});
@@ -170,10 +171,11 @@ class _DompetMajupayScreenState extends State<DompetMajupayScreen> {
                           action: 'Aktifkan',
                           brand: 'OVO\nPayLater',
                           onTap: () {
-                            ScaffoldMessenger.of(context).showSnackBar(
-                              const SnackBar(
-                                content: Text('Aktifkan OVO PayLater'),
-                                backgroundColor: MajuRideTheme.primaryGreen,
+                            Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                builder: (context) =>
+                                    const AktivasiOvoPayLaterScreen(),
                               ),
                             );
                           },
